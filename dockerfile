@@ -1,12 +1,18 @@
-FROM codercom/code-server:latest
+#FROM python:3.8
+
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+
 
 #ENV TZ=America/Los_Angeles
 #RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/ti>
 
-#RUN apt inatall python
 #COPY ./requirements.txt /app
 
-#RUN /usr/local/bin/python -m pip install --upgrade pip
+#RUN sudo apt update
+#RUN sudo apt -y upgrade
+#RUN apt install python
+#RUN sudo apt -y install python3-pip
+
 #RUN pip install --no-cache-dir --upgrade -r requirements.txt --target=/a>
 #ENV PYTHONPATH=/app/appRequirements
 

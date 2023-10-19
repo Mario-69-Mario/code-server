@@ -1,1 +1,1 @@
-docker build -t  code-server-new .
+docker build -t  code-server-local .
