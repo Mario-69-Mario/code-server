@@ -10,6 +10,7 @@ docker run -itd --name code-server -p 0.0.0.0:8080:8080 \
   -v "$PWD:/home/coder/project" \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
+  --restart unless-stopped \
   codercom/code-server:latest
 
 docker ps
